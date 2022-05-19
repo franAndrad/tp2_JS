@@ -11,17 +11,21 @@
 
 let nota = parseInt(prompt("Ingrese la nota: "));
 
-if(nota>=0 && nota<=2)
-    alert("Muy deficiente");
-if(nota>=3 && nota<=4)
-    alert("Insuficiente");
-if(nota>=5 && nota<=6)
-    alert("Suficiente");
-if(nota === 7)
-    alert("Bien");
-if(nota>=8 && nota<=9)
-    alert("Notable");
-if(nota === 10)
-    alert("Sobrasaliente");
-if(nota<0 || nota>10)
-    alert("Introduce un numero valido");
+if(Number.isNaN(nota) === false){
+    if(nota>=0 && nota<=2)
+        alert("Muy deficiente");
+    if(nota>=3 && nota<=4)
+        alert("Insuficiente");
+    if(nota>=5 && nota<=6)
+        alert("Suficiente");
+    if(nota === 7)
+        alert("Bien");
+    if(nota>=8 && nota<=9)
+        alert("Notable");
+    if(nota === 10)
+        alert("Sobrasaliente");
+    if(nota<0 || nota>10)
+        alert("Numero erroneo");
+}else {
+    alert("Ingrese un numero valido");
+}
