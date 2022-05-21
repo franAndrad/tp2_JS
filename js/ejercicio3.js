@@ -2,7 +2,10 @@
 
 // Nota: usar confirm() https://www.w3schools.com/jsref/met_win_confirm.asp
 
-do{
+while(confirm("¿Desea ingresar una cadena?") != false){
     let cadena = prompt("Ingrese una cadena");
-    document.write(cadena+"-");
-}while(confirm("Presione una opcion!") != false);
+    document.write(cadena);
+    if(cadena != null){
+        document.write("-");
+    }
+}
