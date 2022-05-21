@@ -2,7 +2,6 @@
 
 let cadena = prompt("Ingrese el texto para saber las cantidad de vocales que tiene: ");
 let contador=0;
-
 for(let i=0;i<cadena.length;i++){    
     if(cadena.charAt(i)==='a'){
         contador++;
@@ -20,5 +19,4 @@ for(let i=0;i<cadena.length;i++){
         contador++;
     }
 }
-
 alert(`tiene ${contador} vocales`)
