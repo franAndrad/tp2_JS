@@ -4,8 +4,9 @@
 
 while(confirm("¿Desea ingresar una cadena?") != false){
     let cadena = prompt("Ingrese una cadena");
-    document.write(cadena);
     if(cadena != null){
-        document.write("-");
+        document.write(`${cadena} - `);
+    }else{
+        continue;
     }
 }
