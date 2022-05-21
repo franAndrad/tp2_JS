@@ -5,7 +5,4 @@
 do{
     let cadena = prompt("Ingrese una cadena");
     document.write(cadena+"-");
-    if (confirm("Presione una opcion!") == false){
-        break;
-    }
-}while(1);
+}while(confirm("Presione una opcion!") != false);
