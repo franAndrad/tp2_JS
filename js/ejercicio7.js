@@ -8,10 +8,13 @@
 22
 1
 */
-
-for (let i = 30; i >= 1; i--) {
-    for (let j = 0; j < i; j++) {
-        document.write(i);
+let num = prompt("Ingrese un numero:");
+if(num>=1 && num<=50){    
+    for (let i = 30; i >= 1; i--) {
+        for (let j = 0; j < i; j++) {
+            document.write(i);
+        }
+        document.write("<br>");
     }
-    document.write("<br>");
-}
+}else
+    alert("Numero no valido");
